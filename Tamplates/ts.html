@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Recommendation System</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom CSS for white text in header -->
+    <style>
+        .navbar {
+            background-color: #0000FF;
+        }
+        .navbar-brand, .nav > li > a {
+            color: white !important;
+        }
+        .navbar-brand:hover, .nav > li > a:hover {
+            color: #ccc !important; /* Optional hover effect */
+        }
+    </style>
+</head>
+<body style="background-color:white">
+
+    <nav class="navbar">
+        <p class="navbar-brand">My Book Recommender</p>
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/recommend">Recommend</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Top 50 Books</h1>
+            </div>
+
+            {% for i in range(book_name | length) %}
+                <div class="col-md-3" style="margin-top:30px">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="{{ image[i] }}">
+                            <h3>{{ book_name[i] }}</h3>
+                            <p>Author - {{ author[i] }}</p>
+                            <p>Votes - {{ rating_count[i] }}</p>
+                            <p>Rating - {{ rating[i] }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
