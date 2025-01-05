@@ -12,13 +12,18 @@
          <li>Click "Recommend" to see the suggestions.</li>
     </section>
     <!-- Section 3: Project Structure -->
-    <section>
-        <h1>Project Structure</h1>
-        <img src="project_structure.png" alt="Project Structure Screenshot">
-    </section>
-    <!-- Section 4: Model Training Approach -->
-    <section>
-        <h1>Model Training Approach</h1>
+
+   
+  <h1>Dataset</h1>
+
+<p>This project utilizes a book recommendation dataset from Kaggle. You can access the dataset for further exploration and experimentation here:</p>
+
+<p> 
+   <b>Kaggle - </b> <a href="https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset"> Dataset Link</a>
+</p>
+
+ </section>
+   <h1>Model Training Approach</h1>
         <ul>
             <li><code><strong>[popular_book]</strong></code>: - 50 most popular books based on rating and votes.</li>
             <li><code><strong>[stan_df]</strong></code>: - Finding Those Users who rated more than 200 different books.</li>
