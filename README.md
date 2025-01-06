@@ -1,5 +1,4 @@
-
-   <section>
+<section>
         <h1>Project Description</h1>
         <p>This is a Flask-based web application that recommends books based on their popularity and ratings. This Recommend system build based on collaborative filtering approach. The model uses a popularity-based approach to suggest books with the highest ratings. The application is deployed and accessible online via Render.</p>
     </section>
@@ -13,6 +12,33 @@
     </section>
     <!-- Section 3: Project Structure -->
 
+
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">Project Structure</h1>
+        <p>The project was structured as follows:</p>
+        <pre>
+├── script.py            # Main Flask application file to run the web app
+├── templates/           # Folder for HTML templates used by the Flask app
+│   ├── recommend.html   # Home page of the book recommender system
+│   ├── ts.html          # Result page for displaying recommendations
+├── notebook/            # Jupyter Notebook
+     ├── jupyterFile.jpynb      
+├── model_files/         # Folder containing pre-processed data and similarity files
+│   ├── pivot_table.pkl  # Pivot table used for recommendations
+│   ├── similarity.pkl   # Pre-calculated similarity scores
+│   ├── book.pkl.pkl     # Most Popular 50 Books          
+├── README.md            # Project documentation and usage instructions
+├── Procfile             # Configuration file for deploying on Render
+├── requirements.txt     # Python version specification for Render
+├── LICENSE              # MIT LICENSE
+        </pre>
+        <p class="text-muted"># Each folder and file serves a specific purpose in the project's lifecycle.</p>
+    </div>
+</body>
+</html>
    
   <h1>Dataset</h1>
 
